@@ -8,13 +8,5 @@
     <body>
         <h1>Пронина Виктория Сергеевна</h1>
         <p>GitHub: Vikaproni | Docker Hub: vikaproni</p> 
-        <button onclick="ask()">Спросить api</button>
-        <pre id="out"></pre>
-        <script>
-            async function ask() {
-                const response = await fetch('/api');
-                document.getElementById('out').textContent = await response.text();
-            }
-        </script>
     </body>
 </html>
