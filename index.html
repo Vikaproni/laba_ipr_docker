@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head> 
+        <meta charset="utf-8">
+        <title>Laba_ipr</title><title>
+        </title></title></laba_ipr>
+    </head>
+    <body>
+        <h1>Пронина Виктория Сергеевна</h1>
+        <p>GitHub: Vikaproni | Docker Hub: vikaproni</p> 
+        <button onclick="ask()">Спросить api</button>
+        <pre id="out"></pre>
+        <script>
+            async function ask() {
+                const response = await fetch('/api');
+                document.getElementById('out').textContent = await response.text();
+            }
+        </script>
+    </body>
+</html>
